@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    color: #515151;
+    font-family: Yantramanav,sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, p, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+label, input, button {
+    font-size: 1.5rem;
+    border: none;
+}
+
+.main-container {
+    margin: 0 auto;
+    padding: 13px 20px;
+}
+
+.price::before {
+    content: '$';
+}
+
+.content {
+    flex: 1 1;
+}
+
+.home .main-container {
+    padding-top: 50px;
+}  
+
+
+

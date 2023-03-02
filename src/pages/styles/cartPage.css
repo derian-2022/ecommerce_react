@@ -1,0 +1,9 @@
+.cart__btn {
+    padding: 0.5em 1em;
+    color: white;
+    cursor: pointer;
+}
+
+.cartPage__total {
+    padding: 0.8em 7em;
+}

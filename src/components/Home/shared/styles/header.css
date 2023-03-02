@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.header__logo-link {
+    color: inherit;
+    display: flex;
+    margin-left: .5em;
+    color: #F85555;
+    margin-left: 1em;
+    font-size: 1em;
+}
+
+.header__list {
+    display: flex;
+    gap: 3em;
+    margin-left: 300%;
+}
+
+.header__link {
+    font-size: 1.3rem;
+    margin-bottom: 2em;
+}
+
+.header__item {
+    font-size: 2.5em;
+}
+
+.navbar {
+    height: 60px;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+    height: 70px;
+}
+}
+
+/* @media (min-width: 992px) { 
+    .navbar__nav {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+} */

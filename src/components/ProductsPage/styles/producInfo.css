@@ -1,0 +1,102 @@
+.prodInfo {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 6em;
+}
+
+.prodInfo__brand {
+    color: rgb(175, 175, 175);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.prodInfo__name {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.prodInfo__description {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.prodInfo__price-label {
+    font-size: 1.3em;
+    color: rgb(175, 175, 175);
+}
+
+.prodInfo__price-number {
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+}
+
+.prodInfo__counter {
+    font-size: 1.2em;
+}
+
+.prodInfo__counter-label {
+    font-size: 1.1em;
+    color: rgb(175, 175, 175);
+}
+
+.prodInfo__price{ 
+   width: 50%;
+   font-size: 1em;
+   margin-bottom: 20px;
+}
+
+.counter {
+    display: flex;
+    border: 1px solid #dcdada;
+    width: max-content;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.counter__minus, 
+.counter__number,
+.counter__plus {
+    width: 35px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter__minus {
+    cursor: pointer;
+    border-right: 1px solid #aaa;
+}
+
+.counter__plus {
+    cursor: pointer;
+    border-left: 1px solid #aaa;
+}
+
+.prodInfo__btn {
+    font-size: 1.2rem;
+    background-color: #f85555;
+    color: white;
+    padding: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 200ms ease, background-color 200ms ease;
+}
+
+.prodInfo__btn:hover {
+    transform: scale(1.05);
+    background-color: blue;
+}
+
+.bx-cart {
+    font-size: 1em;
+    color: #ffffff;
+    
+}
