@@ -13,6 +13,8 @@ import ProtectedRoutes from './pages/ProtectedRoutes'
 import CartPage from './pages/CartPage'
 import PurchasesPage from './pages/PurchasesPage'
 
+
+
 function App() {
 
   const dispatch = useDispatch()

@@ -92,3 +92,34 @@
     filter: brightness(1.2);
     transform: scale(1.1);
 }
+
+
+
+
+/* .product-header .img{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--light-gray);
+    position: relative;
+}
+
+.product__header .img .over {
+    background: #fff;
+    opacity: 0;
+    position: absolute;
+    transition: .8s;
+}
+
+.product__header .img:hover .over{
+    opacity: 1;
+}
+
+.product-header .img img{
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+} */

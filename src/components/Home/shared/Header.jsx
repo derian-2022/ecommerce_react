@@ -6,8 +6,9 @@ import './styles/header.css'
 const Header = () => {
 
   const [isClose, setIsClose] = useState(true)
+  
 
-  const handleClick = ()  => setIsClose(!isClose)
+  const handleClick = () => setIsClose(!isClose)
 
   return (
     <header className='header'>
@@ -16,30 +17,29 @@ const Header = () => {
             <Link className='header__logo-link' to='/'>
               e-commerce
             </Link>
-        </h1>
-        
+        </h1>  
 
         {/* <i 
           onClick={handleClick}
           className={'header__menu bx bx-menu'}
         ></i>  */}
      
-        <div className='navbar'>
+        <div onClick={handleClick} className='navbar'>
         <nav className={`header__nav ${isClose && 'close__menu'}`}>
             <ul className='header__list'>
                 <li className='header__item'>
                   <Link className='header__link' to='/user/login'>
-                  <i className='bx bx-user'></i> 
+                  <div className='icon'><i className='bx bx-user'></i> </div>
                   </Link>
                 </li>
                 <li className='header__item'>
                   <Link className='header__link' to='/purchases'>
-                  <i className='bx bx-archive'></i>
+                  <div className='icon'><i className='bx bx-archive'></i></div>
                   </Link>
                 </li>
                 <li className='header__item'>
                   <Link className='header__link' to='/cart'>
-                  <i className='bx bx-cart-download'></i>
+                  <div className='icon'><i className='bx bx-cart-download'></i></div>
                   </Link>
                 </li>
             </ul>

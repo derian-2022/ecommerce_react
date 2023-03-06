@@ -1,0 +1,14 @@
+.product__page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media (min-width: 768px) {
+    .product__page .product-info-flex>.col {
+    padding: 20px;
+    width: 50%;
+}
+    
+}

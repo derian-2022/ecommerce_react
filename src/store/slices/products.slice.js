@@ -29,7 +29,6 @@ export const getProductsByName = (text = '', isCategory=false) => (dispatch) => 
     } else {
         url = `https://e-commerce-api-v2.academlo.tech/api/v1/products?title=${ text }`
     }
-    
 
     axios.get(url)
     .then(res => dispatch(setProducts(res.data)))

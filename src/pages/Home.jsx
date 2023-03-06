@@ -17,6 +17,7 @@ const Home = () => {
 
   const { products } = useSelector(state => state)
 
+
   const dispatch = useDispatch()
 
   const handleSubmit = e => {
@@ -32,7 +33,7 @@ const Home = () => {
     .catch(err => console.log(err.response))
   }, [])
 
-  const handelClickCategory = id => {
+  const handleClickCategory = id => {
     dispatch(getProductsByName(id, true))
   }
 
@@ -59,9 +60,10 @@ const Home = () => {
 
   const filterProduct = product => +product.price >= fromTo.from && +product.price <= fromTo.to
 
+
   return (
     <div className='home'>
-        
+      
         <form className='home__form' onSubmit={handleSubmit}>
           <input className='home__input' id='inputSearch' type="text" />
           <button className='home__search'>
@@ -69,40 +71,50 @@ const Home = () => {
           </button>
         </form>
         
-        <article>
+        
+        <article className='home__articulo'>
               <section>
-                <header  className='home__category-header'>
+                <header className='home__category-header'>
                   <h3 className='home__category-title'>Price</h3>
                   <i className='bx bx-chevrons-down home__category-arrowhead'></i>
                 </header>
                 <form onSubmit={handleSubmitPrice}>
                   <div>
-                    <label htmlFor="from">From</label>
-                    <input type="number" id='from' />
+                    <label className='label' htmlFor="from">From</label>
+                    <input className='input__number' type="number" id='from' />
                   </div>
                   <div>
-                    <label htmlFor="to">To</label>
-                    <input type="number" id='to' />
+                    <label className='label' htmlFor="to">To</label>
+                    <input className='input__number' type="number" id='to' />
                   </div>
+            
+              
                   <button className='home__search'>Filter Price</button>
                 </form>
               </section>
-          <section className='home__category'>
-            <header className='home__category-header'>
-              <h3 className='home__category-title'>Category</h3>
-              <i className='bx bx-chevrons-down home__category-arrowhead'></i>
-            </header>
-            <ul className='home__category-list'>
-              <li onClick={() => dispatch(getAllProductsThunk())} className='home__category-item'>All Products</li>
-              {
-                categories?.map(category => (
-                  <li className='home__category-item' key={category.id} onClick={() => handelClickCategory(category.id)}>{category.name}</li>
-                ))
-              }
-            </ul>
-          </section>
-        </article>
 
+              <br /><br />
+
+            <section className='home__category'>
+              <header className='home__category-header'>
+                <h3 className='home__category-title'>Category</h3>
+                  <i className='bx bx-chevrons-down home__category-arrowhead'></i>
+              </header>
+
+              <ul className='home__category-list'>
+                <li onClick={() => dispatch(getAllProductsThunk())} className='home__category-item'>All Products
+                </li>
+                {
+                  categories?.map(category => (
+                   <li className='home__category-item' key={category.id} onClick={() => handleClickCategory
+                    (category.id)}>{category.name}</li>
+                  ))
+                }
+              </ul>
+            </section>
+          
+        </article>
+     
         <div className='home__products'>
             {   
                 products?.length === 0 ?
@@ -116,6 +128,7 @@ const Home = () => {
                   ))
             }
         </div>
+    
     </div>
   )
 }

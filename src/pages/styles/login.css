@@ -63,7 +63,7 @@
     border: 1px solid #E1E1E1;
     border-radius: 5px;
     padding: 17px;
-    width: 300px;
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,3 +124,34 @@
     font-size: inherit;
     font-size: .7rem;
 }
+
+.form__hello {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #2fa8f8;
+}
+
+.input {
+    border: 1px solid rgb(185, 185, 185)
+}
+
+label {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+
+
+    animation: typing 2s steps(18), blink .12s infinite step-end alternate;
+overflow:hidden;
+}
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+@keyframes blink {
+    100% { border-color: transparent; }
+}
+

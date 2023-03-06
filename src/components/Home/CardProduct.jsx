@@ -40,7 +40,7 @@ const CardProduct = ({ product }) => {
   return (
     <article className='product' onClick={handleClick}>
         <header className='product__header'>
-            <img className='product__img' src={product.images[0].url} alt="" />
+            <img className='product__img' src={product.images[0].url} alt class="over" crossOrigin='anonymous'/>
         </header>
         <section className='product__body'>
             <header className='product__titles'>
