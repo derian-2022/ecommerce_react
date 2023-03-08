@@ -17,9 +17,6 @@ const SimilarProducts = ({ category, productId }) => {
             category.id))  // otra logica---- && product.id !== productId //
         }
     }, [products, category])
-    
-
-    // console.log(filterProducts)
 
     return (
         <div className='similar'>

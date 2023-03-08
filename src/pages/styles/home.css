@@ -2,6 +2,8 @@
     display: grid;
     justify-items: center;
     gap: 2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .home__form {
@@ -81,10 +83,50 @@
     border: 1px solid rgb(172, 172, 172);
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 700px) {
     .home {
-        grid-template-columns: 300px 1fr;
+        grid-template-columns: 400px 1fr;
+    }
+    body {
+        background-color: rgb(234, 233, 233);
     }
    
+}
+
+li {
+    list-style: none;
+    
+}
+
+.home__footer {
+    display: flex;
+    padding: 60px 0;
+    position: inherit;
+    gap: 1em;
+    
+    margin-left: 1em;
+    
+}
+
+.bxl-instagram {
+    border: 1px solid rgb(206, 206, 206);
+    font-size: 1.2em;
+    color: #F85555;
+}
+
+.bxl-linkedin {
+    border: 1px solid rgb(206, 206, 206);
+    font-size: 1.2em;
+    color: #F85555;
+}
+
+.bxl-youtube {
+    border: 1px solid rgb(206, 206, 206);
+    font-size: 1.2em;
+    color: #F85555;
+}
+
+.home__err {
+    padding: 2em;
 }
 
